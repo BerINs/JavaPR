@@ -25,5 +25,7 @@ public class IfTest {
         }
         System.out.println("z = " + z);
 
+        //写出最高效的2*8
+
     }
 }
