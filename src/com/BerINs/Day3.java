@@ -30,8 +30,20 @@ public class Day3 {
         System.out.println("百位数: " + x/100);
         //尽量不要在打印层计算
 
+        short ss1 = 10;
+        //s1 = s1 + 2;  //int转化为short，编译失败
+        ss1 += 2;       //类型不转化，可以编译(推荐)
+        ss1++;          //可以编译
+        System.out.println(ss1);
+
+        int num1 = 10;
+        num1 += (num1++) + (++num1);   // num1 + num1 , num1++
+        System.out.println(num1);
+
+        //逻辑运算符（都是Boolean类型变量
 
     }
+
 
 
 
