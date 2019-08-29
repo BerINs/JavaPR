@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class SwitchTest2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int year = in.nextInt();
         int month = in.nextInt();
         int day = in.nextInt();
         int sumdays = 0;
@@ -18,9 +19,18 @@ public class SwitchTest2 {
                 sumdays += 31;
             case 11 :
                 sumdays += 30;
+            case 2:
+                //判断是否是闰年
+                if((year % 4 == 0 && year % 100 !=0) || year % 400 == 0){
+                    sumdays += 29;
+                }else{
+                    sumdays += 28;
+                }
             case 1 :
                 sumdays += day;
                 //...
         }
     }
 }
+
+
