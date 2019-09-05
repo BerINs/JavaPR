@@ -36,5 +36,7 @@ public class ArrayTest1 {
 
         double avr = total/(double)arr.length;
         System.out.println("平均数为：" + avr);
+
+
     }
 }
