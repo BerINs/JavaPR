@@ -24,6 +24,20 @@ public class OOPTest {
         p1.eat();
         p1.sleep();
         p1.talk("Chinese");
+
+        System.out.println();
+
+        Person p2 = new Person();
+        System.out.println(p2.name);    //值为null
+        System.out.println(p2.isMale);  //值为false
+        //如果创建一个类的多个对象，每个对象都独立的拥有一套类的属性(非static的）
+        //意味着：如果我们修改一个对象的属性a，则不影响另一个属性的值
+
+        System.out.println();
+        Person p3 = p1; //地址值赋予
+        System.out.println(p3.name);
+        p3.age = 10;
+        System.out.println(p1.age); //10
     }
 }
         class Person {
@@ -42,6 +56,6 @@ public class OOPTest {
             }
 
             public void talk(String language) {
-                System.out.println("人可以说话，使用的是：" + language);
-            }
+        System.out.println("人可以说话，使用的是：" + language);
+        }
         }
