@@ -27,6 +27,5 @@ class Circle {
     public void findArea(double radius) {
         double area = Math.PI * radius * radius;
         System.out.println(area);
-        System.out.println();
     }
 }
