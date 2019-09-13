@@ -17,7 +17,7 @@ public class Person1 {
     }
 
     public int addAge(int i) {
-        age+= i;
+        age+= i;/
         return age;//
     }
 
