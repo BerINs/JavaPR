@@ -7,7 +7,7 @@ package shapes;
 
 
 public class Circle extends Shapes {
-    protected int radius;
+    protected int radius;                   //圆的半径
     static final double pi = 3.14;
 
     public Circle(int radius) {
