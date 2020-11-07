@@ -1,6 +1,4 @@
-package Shapes;
-
-import javax.sql.rowset.serial.SerialArray;
+package shapes;
 
 /**
  * @author BerINs
